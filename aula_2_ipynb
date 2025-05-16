@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyP7PFEpAd+XAptEODSP8hrA",
+      "authorship_tag": "ABX9TyMiZphrp4ubNJqFrmOEKXcy",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -414,9 +414,17 @@
         "bed = 10.75\n",
         "bath = 9.50\n",
         "\n",
+        "#3) Complete a lista de listas com as informações de  bedroom e bathroom.\n",
+        "\n",
         "house = [[\"hallway\", hall],\n",
         "         [\"kitchen\", kit],\n",
-        "         [\"living room\", liv]]\n",
+        "         [\"living room\", liv],\n",
+        "         [\"bedroom\", bed],\n",
+        "         [\"bathroom\", bath]]\n",
+        "\n",
+        "#3.1) Mostre a variável house.\n",
+        "\n",
+        "#3.2) Print o tipo da variável house.\n",
         "\n",
         "print(house)\n",
         "print(type(house))"
@@ -426,15 +434,15 @@
           "base_uri": "https://localhost:8080/"
         },
         "id": "ODkZo3GlHhVS",
-        "outputId": "c3ad6065-cf52-42f1-e014-57aa15da500f"
+        "outputId": "4fc50f08-5fcd-488f-8eac-f6a247b37ae2"
       },
-      "execution_count": 9,
+      "execution_count": 56,
       "outputs": [
         {
           "output_type": "stream",
           "name": "stdout",
           "text": [
-            "[['hallway', 11.25], ['kitchen', 18.0], ['living room', 20.0]]\n",
+            "[['hallway', 11.25], ['kitchen', 18.0], ['living room', 20.0], ['bedroom', 10.75], ['bathroom', 9.5]]\n",
             "<class 'list'>\n"
           ]
         }
@@ -463,7 +471,7 @@
         "id": "UuuGbY4aJR0t",
         "outputId": "b67cfa08-aac3-4a36-b737-dcaf691fe1ae"
       },
-      "execution_count": 33,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "execute_result",
@@ -480,7 +488,7 @@
     {
       "cell_type": "code",
       "source": [
-        "#sabe tamanho da lista\n",
+        "#saber tamanho da lista\n",
         "len(fam)\n",
         "print(f\"O tamanho da lista é {len(fam)}\")"
       ],
@@ -583,8 +591,10 @@
         "print(areas[1])\n",
         "print(areas[-1])\n",
         "print(areas[5])\n",
-        "\n",
+        "#5)acessando os elementos da lista, realize a soma dos valores de Kitchen e living room e atribua em eat_sleep_area\n",
         "eat_sleep_area = areas[3] + areas[5]\n",
+        "\n",
+        "#5.1) Exiba a variável eat_sleep_area.\n",
         "print(eat_sleep_area)"
       ],
       "metadata": {
@@ -611,7 +621,7 @@
     {
       "cell_type": "code",
       "source": [
-        "#Acessar elementos da lista e atribuir a uma nova lista\n",
+        "#6) Acesse os 6 primeiros elemento de areas e atribua a uma nova lista: downstairs.\n",
         "downstairs = [areas[0:6]]"
       ],
       "metadata": {
@@ -623,6 +633,7 @@
     {
       "cell_type": "code",
       "source": [
+        "#6.1) Acesse os 4 últimos elemento de areas e atribua a uma nova lista: upstairs.\n",
         "upstairs = [areas[6:10]]"
       ],
       "metadata": {
@@ -634,6 +645,7 @@
     {
       "cell_type": "code",
       "source": [
+        "#6.2) Exiba downstairs e upstairs.\n",
         "print(downstairs)\n",
         "print(upstairs)"
       ],
@@ -673,7 +685,7 @@
       "metadata": {
         "id": "lt1bF6bES-lX"
       },
-      "execution_count": 5,
+      "execution_count": null,
       "outputs": []
     },
     {
@@ -763,7 +775,7 @@
         "id": "3ksIek2mVvn-",
         "outputId": "5598a54a-a181-4370-cf84-262e2c2b844b"
       },
-      "execution_count": 10,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "execute_result",
@@ -798,7 +810,7 @@
         "id": "yIzt7PmyzLKB",
         "outputId": "1c30b552-a06f-4ce0-eeb5-f230551ff35b"
       },
-      "execution_count": 27,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "execute_result",
@@ -826,7 +838,7 @@
         "id": "hIHztPbvzwJZ",
         "outputId": "3e9b17ae-5dc5-43e4-896b-fbfec02aa728"
       },
-      "execution_count": 36,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "execute_result",
@@ -864,7 +876,7 @@
         "id": "R7MNbksz1OO7",
         "outputId": "db4162c4-d80a-480b-edfd-7ddde0a23e28"
       },
-      "execution_count": 37,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "execute_result",
@@ -895,7 +907,7 @@
         "id": "KErNf_F918GQ",
         "outputId": "b0ea4a57-58a8-41af-e2a8-0a0485b7b52f"
       },
-      "execution_count": 39,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -924,7 +936,7 @@
         "id": "NkQFrKqp5TNf",
         "outputId": "41903043-1d73-4df7-d5c7-2001a52dcaf7"
       },
-      "execution_count": 40,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -953,7 +965,7 @@
         "id": "W7d9K9Yw5Y_r",
         "outputId": "dd0ef09d-2a4d-47ec-93a7-bc41d665d269"
       },
-      "execution_count": 41,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
@@ -995,7 +1007,7 @@
         "id": "0K1p86w065RD",
         "outputId": "a7ff8d2c-ca62-4fe1-9a52-21688e015fca"
       },
-      "execution_count": 53,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "execute_result",
@@ -1021,10 +1033,13 @@
     {
       "cell_type": "code",
       "source": [
-        "#8 and 8.1 and 8.2\n",
+        "#8\n",
+        "# Adicione [\"poolhouse\", 24.5] no fim da lista  e atribua em uma nova lista chamada de areas_1\n",
         "areas_1 = areas + [\"poolhouse\", 24.5]\n",
         "areas_1\n",
+        "#8.1)Adicione [\"garage\", 15.5] no fim da lista areas_1  e atribua em uma nova lista chamada de areas_2\n",
         "areas_2 = areas_1 + [\"garage\", 15.5]\n",
+        "#8.2) Exiba areas_2\n",
         "areas_2"
       ],
       "metadata": {
@@ -1034,7 +1049,7 @@
         "id": "gItBij_775E1",
         "outputId": "10aec953-236e-4de3-8fb3-2439cca6d5ad"
       },
-      "execution_count": 54,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "execute_result",
@@ -1078,7 +1093,7 @@
         "id": "mjntHGJV9Fwo",
         "outputId": "ea042f1d-ace4-4026-f9cc-0b673f399980"
       },
-      "execution_count": 50,
+      "execution_count": null,
       "outputs": [
         {
           "output_type": "stream",
